@@ -1,0 +1,16 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.6.0
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0'
+dotenv: ".env"
+networks:
+  default: development
+  rinkeby: active
+  kovan: acive
+wallets:
+  from_key: ${PRIVATE_KEY}
+arbitrary:
+  erc_address: ${ERC20_ADDRESS}
+  recipient: ${RECIPIENT}
